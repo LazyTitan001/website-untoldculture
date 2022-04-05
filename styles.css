@@ -1,0 +1,88 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #6666;
+}
+
+/* PARALLAX IMAGE STYLING */
+
+/* we position relative with no repeating and centered, we make sure that it covers the full container */
+
+div.img1,
+div.img2,
+div.img3 {
+  color: #000;
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+  fixed = parallax
+  scroll = normal(default attachment)
+  */
+  background-attachment: fixed;
+}
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1 {
+  background: url('one.jpg');
+  min-height: 100%;
+}
+
+.img2 {
+  background: url('two.jpg');
+  min-height: 400px;
+}
+
+.img3 {
+  background: url('three.jpg');
+  min-height: 400px;
+}
+
+/* PARALLAX TEXT */
+.caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 1.4rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.caption .border {
+  background-color: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.caption .border.trans {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* SECTION STYLINGS */
+.section {
+  text-align: center;
+  padding: 50px 32px;
+}
+
+.section-light {
+  background-color: #f4f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
